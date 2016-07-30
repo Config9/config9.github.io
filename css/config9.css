@@ -25,5 +25,6 @@ pre > code{
     word-wrap: normal;
     background-color: transparent;
     border: 0;
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
