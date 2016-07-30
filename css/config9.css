@@ -12,7 +12,8 @@ pre{
     line-height: 1.45;
     background-color: #f7f7f7;
     border-radius: 3px;
-    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+    font-size: 12px;
 }
 
 pre > code{
@@ -25,6 +26,7 @@ pre > code{
     word-wrap: normal;
     background-color: transparent;
     border: 0;
-    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+    font-size: 12px;
 }
 
