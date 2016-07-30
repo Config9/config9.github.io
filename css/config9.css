@@ -10,10 +10,10 @@ pre{
     overflow: auto;
     font-size: 85%;
     line-height: 1.45;
-    background-color: #f7f7f7;
+    background-color: #e7e7e7;
     border-radius: 3px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
-    font-size: 12px;
+    font-size: 1rem;
 }
 
 pre > code{
@@ -27,6 +27,7 @@ pre > code{
     background-color: transparent;
     border: 0;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
-    font-size: 12px;
+    font-size: 1rem;
+    border-radius: 3px;
 }
 
