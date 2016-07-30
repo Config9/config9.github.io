@@ -1,2 +1,3 @@
 name: Config9, Loi Corp
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title

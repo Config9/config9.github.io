@@ -12,8 +12,8 @@ post_excerpt: |
   
   All web developers who begin to learn SASS & Compass and need a clear, easy to understand example.
 layout: post
-permalink: >
-  https://config9.com/ui/building-responsive-login-form-with-sass-compass-5-steps/
+<!-- permalink: >
+  http://beta.config9.com/ui/building-responsive-login-form-with-sass-compass-5-steps/ -->
 published: true
 dsq_thread_id:
   - "4981798685"
