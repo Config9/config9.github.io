@@ -1,33 +1,145 @@
-body{
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 16px;
-    line-height: 1.5;
-    word-wrap: break-word;
-}
+/* Config9 Stylesheet */
+/**
+ * This file is a config9 customized css theme. 
+ * You should not modified it. To add custome style for your site, just use style.css file
+ *
+ * Made By Config9.com
+ */
+/* -----------------------------------------------------------
+* Selfhost font fix
+* https://github.com/google/material-design-icons/tree/master/iconfont
+-------------------------------------------------------------- */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(../fonts/MaterialIcons-Regular.woff2) format("woff2"), url(../fonts/MaterialIcons-Regular.woff) format("woff"), url(../fonts/MaterialIcons-Regular.ttf) format("truetype"); }
 
-pre{
-	padding: 16px;
-    overflow: auto;
-    font-size: 85%;
-    line-height: 1.45;
-    background-color: #e7e7e7;
-    border-radius: 3px;
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
-    font-size: 1rem;
-}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga'; }
 
-pre > code{
-	display: inline;
-    max-width: auto;
-    padding: 0;
-    margin: 0;
-    overflow: visible;
-    line-height: inherit;
-    word-wrap: normal;
-    background-color: transparent;
-    border: 0;
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
-    font-size: 1rem;
-    border-radius: 3px;
-}
+/*-----------------------------------------------------*/
+.icon-block {
+  padding: 0 15px; }
 
+.icon-block .material-icons {
+  font-size: inherit; }
+
+a.brand-logo img {
+  display: inline-block;
+  padding: 6px 0px; }
+
+/* --------------------------------------------------------
+* Config9 fixes active nav bar while scrollspy
+----------------------------------------------------------- */
+nav ul li a.active {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+/*
+* Reset font golbal & format code, pre  
+*/
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif, "Proxima Nova", "Segoe UI", Roboto, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word; }
+
+pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #e7e7e7;
+  border-radius: 3px;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+  font-size: 1rem; }
+
+pre > code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+  font-size: 1rem;
+  border-radius: 3px; }
+
+/*
+* Footer decor
+*/
+footer {
+  background-color: #212121;
+  font-size: 0.8rem; }
+
+/*
+* Type decor
+*/
+h1 {
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  margin-bottom: 10px; }
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600; }
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 300; }
+
+/*
+* Brand logo
+*/
+nav .brand-logo {
+  font-size: 1.4rem; }
+
+/*
+* Post decoration
+*/
+.config9-post a, .post-related a {
+  color: black;
+  border-bottom: 1px dotted black;
+  font-style: italic; }
+
+.config9-post {
+  padding-bottom: 35px; }
+
+.config9-post .post-meta {
+  padding: 0 5px; }
+
+.post-related {
+  border-top: 1px solid #eaeaea;
+  padding-top: 35px; }
+
+/*
+* For responsive
+*/
+@media only screen and (max-width: 415px) {
+  nav .brand-logo i.fa {
+    line-height: 56px; } }
