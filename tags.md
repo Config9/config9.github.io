@@ -1,8 +1,12 @@
 ---
-layout: post
-title: Tag
+layout: default
+published: true
+title: "Config9"
+date: 2016-07-29
+tags: [index, cf9]
+comments: true
+url: /
 ---
-
 {% comment %}
 =======================
 The following part extracts all the tags from your posts and sort tags, so that you do not need to manually collect your tags to a place.

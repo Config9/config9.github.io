@@ -1,0 +1,18 @@
+
+<blockquote>
+  {% assign ls = "" %}
+  {% assign px = "" %}
+  {% for post in site.related_posts %}
+    {% unless post.tags contains "cf9" %}
+      {% assign ls = post.title %}
+    {% endunless %}
+  {% endfor %}
+  
+  
+  {% assign px = site.posts | where:"title",ls %}
+  {% for xx in px %}
+    <p><a href="{{site.url}}{{xx.url}}">{{xx.title}}</a></p>
+    <small>By {{xx.author}}</small>
+  {% endfor %}
+
+</blockquote>

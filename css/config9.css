@@ -128,18 +128,23 @@ nav .brand-logo {
   font-style: italic; }
 
 .config9-post {
-  padding-bottom: 35px; }
+  padding-bottom: 2.5 rem; }
 
 .config9-post .post-meta {
   padding: 0 5px; }
 
 .post-related {
   border-top: 1px solid #eaeaea;
-  padding-top: 35px; }
+  padding-top: 2.5rem; }
 
 /*
 * For responsive
 */
 @media only screen and (max-width: 415px) {
+  
   nav .brand-logo i.fa {
-    line-height: 56px; } }
+    line-height: 56px; } 
+  
+  footer {
+    font-size: 0.9rem; }
+}

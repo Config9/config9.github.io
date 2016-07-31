@@ -22,16 +22,7 @@ layout: default
  				</span>
 			</p>
 			
-			<!-- Ads by GG -->
-			<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-			<!-- Links Ads 468x15 -->
-			<ins class="adsbygoogle"
-			     style="display:inline-block;width:468px;height:15px"
-			     data-ad-client="ca-pub-4142190075311515"
-			     data-ad-slot="5763816980"></ins>
-			<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
+			{% include ads1.html %}
 
 		</div>
 	</section>
@@ -54,10 +45,11 @@ layout: default
 	      <div class="col s12 m6">
 
 	      	<ul class="collection with-header">
-		        <li class="collection-header"><h3>Posts related to: <a href="#">This post title</a></h3></li>
-		        <li class="collection-item"><a href="#"><i class="fa fa-play" aria-hidden="true"></i> The danisha is bringing up</a></li>
-		        <li class="collection-item"><a href="#"><i class="fa fa-play" aria-hidden="true"></i> The danisha is bringing up</a></li>
-		        <li class="collection-item"><a href="#"><i class="fa fa-play" aria-hidden="true"></i> The danisha is bringing up</a></li>
+		        <li class="collection-header"><h3>Posts related to: <a href="#">{{ page.title }}</a></h3></li>
+		        {% for post in site.related_posts limit:3 %}
+		        	<li class="collection-item"><a href="{{ site.url }}{{ post.url }}"><i class="fa fa-play" aria-hidden="true"></i> {{ post.title }}</a></li>
+		        {% endfor %}
+		        
 		        
 		    </ul>
 		  </div>

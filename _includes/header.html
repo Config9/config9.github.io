@@ -1,0 +1,46 @@
+<!-- Config9 Material Frontend Template -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>{{ page.title }}</title>
+  <!-- Metas -->
+  <meta name="description" content="{{ page.description }}">
+  {% assign t = "" %}
+  {% for tag in page.tags %}
+    {% assign t = t | append:tag | append: "," %}
+  {% endfor %}
+
+  <meta name="keywords" content="{{t}}">
+  <meta name="og:title" content="{{ page.title }}">
+  <meta name="og:description" content="{{ page.description }}">
+  <meta name="og:site_name" content="Config9.com">
+  <meta name="og:type" content="article">
+
+  <meta name="twitter:site" content="@config9">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+  <meta name="twitter:creator" content="@config9">
+  <meta name="twitter:card" content="photo" />
+  <meta name="twitter:url" content="{{ page.url }}"/>
+  <meta property='og:image' content="/img/config9.png">
+  <meta name="twitter:image" content="/img/config9.png">
+
+  <link rel="canonical" href="{{ page.url }}">
+  <link rel="shortcut icon"  href="/img/config9.png" />
+  <link rel="publisher" href="https://plus.google.com/u/0/+LoiTranDuc85/posts" />
+  <link rel="alternate" href="{{ page.url }}" hreflang="en"/>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+
+  
+
+
+  <!-- CSS  -->
+  <link href="/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/config9.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
