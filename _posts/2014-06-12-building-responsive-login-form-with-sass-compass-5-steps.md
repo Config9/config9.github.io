@@ -8,7 +8,7 @@ date: 2014-04-30
 category: database
 tags: [data, oracle, fancy]
 comments: true
-url: building-responsive
+url: /tutorials/building-responsive
 ---
 This is my first tutorial about SASS and I will make a simple example: <strong>Building THREE Responsive Login Form with SASS and Compass in 5 steps</strong>.
 
